@@ -10,6 +10,6 @@ SELECT
 FROM 
     INFORMATION_SCHEMA.COLUMNS
 WHERE 
-    TABLE_SCHEMA = DATABASE()  -- current database passed as argument
-    AND TABLE_NAME = 'Books';  -- Capital B to match checker requirement
+    TABLE_SCHEMA = 'alx_book_store'  -- explicit database name
+    AND TABLE_NAME = 'Books';        -- capital B as required
 
